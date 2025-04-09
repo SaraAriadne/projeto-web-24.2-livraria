@@ -7,11 +7,22 @@ $(function(){
         centerMode: true,
         autoplay: true, 
         autoplaySpeed: 2000,
+        speed: 600,
         pauseOnHover: false, 
         pauseOnFocus: false,             
-        arrows: true,  
+        arrows: false,  
         prevArrow: $(),
-        nextArrow: $()
+        nextArrow: $(),
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                }
+            }
+        ]
     });
 
     $slider.on("afterChange", function(){

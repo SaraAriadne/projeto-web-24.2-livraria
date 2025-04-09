@@ -70,6 +70,14 @@ body {
           flex-direction: column;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 12px; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .sub_page .hero_area {
   min-height: auto;
 }
@@ -88,7 +96,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 3px 15px;
+  padding: 3px 0px;
   margin: 10px 15px;
   color: #272727;
   text-align: center;
@@ -191,6 +199,7 @@ a:focus {
 }
 
 .quote_btn-container {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +407,7 @@ a:focus {
 
 .slider-best-sellers .box-slider{
   transform: scale(0.6);
-  transition: 0.3s;
+  transition: transform 0.5s ease;
 
 }
 
