@@ -325,6 +325,7 @@ a:focus {
   background-color: #f89646;
 }
 
+
 .furniture_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
@@ -381,6 +382,28 @@ a:focus {
   color: #6bb7be;
   text-transform: uppercase;
   font-size: 15px;
+} 
+
+
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.slider-best-sellers .box-slider{
+  transform: scale(0.6);
+  transition: 0.3s;
+
+}
+
+.slider-best-sellers .box-slider.slick-center{
+  transform: scale(1);
 }
 
 .about_section {

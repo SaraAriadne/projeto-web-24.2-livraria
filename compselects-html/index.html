@@ -29,6 +29,10 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!--Jquery para o uso de slick slider-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body>
@@ -198,7 +202,7 @@
   </div>
 
   <!-- furniture section -->
-
+  
   <section class="furniture_section layout_padding">
     <div class="container">
       <div class="heading_container">
@@ -209,8 +213,8 @@
           Conheça os nossos livros mais vendidos.
         </p>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
+      <div class="row slider-best-sellers">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/livro1.jpg" alt="">
@@ -230,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/livro2.jpg" alt="">
@@ -250,7 +254,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/livro3.jpeg" alt="">
@@ -270,7 +274,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/f4.png" alt="">
@@ -290,7 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/f5.png" alt="">
@@ -310,7 +314,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 box-slider">
           <div class="box">
             <div class="img-box">
               <img src="images/f6.png" alt="">
@@ -332,6 +336,8 @@
         </div>
       </div>
     </div>
+   
+    
   </section>
 
   <!-- end furniture section -->
@@ -696,8 +702,12 @@
   <!-- footer section -->
 
 
+
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
   <!-- custom js -->
