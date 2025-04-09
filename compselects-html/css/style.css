@@ -114,6 +114,10 @@ a:focus {
   color: initial;
 }
 
+h1{
+  color: #19406c;
+}
+
 .btn,
 .btn:focus {
   outline: none !important;
