@@ -397,6 +397,15 @@ h1{
   font-size: 15px;
 } 
 
+.furniture_section .heading_container{
+  align-items: center;
+}
+
+.furniture_section .heading_container h2{
+  font-size: 2.5rem;
+  color: #19406c;
+}
+
 
 
 .slider-best-sellers .box-slider.slick-center .box:hover {
@@ -456,8 +465,8 @@ h1{
 
 .blog_section .heading_container {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .blog_section .heading_container h2::before {
