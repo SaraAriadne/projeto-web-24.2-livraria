@@ -474,6 +474,7 @@ a:focus {
   color: #6bb7be;
 }
 
+/* client section */
 .client_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -495,15 +496,19 @@ a:focus {
 
 .client_section .box .img-box {
   border-radius: 100%;
-  border: 10px solid #6bb7be;
+  border: 5px solid #6bb7be;
   margin-right: 25px;
   min-width: 175px;
   max-width: 175px;
+  height: 175px;
   overflow: hidden;
 }
 
 .client_section .box .img-box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .client_section .box .detail-box {
