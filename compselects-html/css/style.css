@@ -222,7 +222,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #f9fafa;
+  background-color: #fafaf9;
 }
 
 .slider_section .row {
@@ -475,6 +475,14 @@ a:focus {
 }
 
 /* client section */
+.client_section {
+  position: relative;
+  background-color: #f9fafa;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin: 45px;
+}
+
 .client_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
