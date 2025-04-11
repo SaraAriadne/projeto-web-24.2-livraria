@@ -208,8 +208,8 @@ a:focus {
 .quote_btn-container a span {
   margin-right: 5px;
 }
-
 /*end header section*/
+
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -324,7 +324,9 @@ a:focus {
   height: 17px;
   background-color: #f89646;
 }
+/* end slider section */
 
+/* furniture_section */
 .furniture_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
@@ -382,7 +384,9 @@ a:focus {
   text-transform: uppercase;
   font-size: 15px;
 }
+/* end forniture section */
 
+/* about section */
 .about_section {
   background-color: #f9fafa;
 }
@@ -417,7 +421,9 @@ a:focus {
   background-color: transparent;
   color: #6bb7be;
 }
+/* end about section */
 
+/* blog section */
 .blog_section .heading_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -473,6 +479,7 @@ a:focus {
   background-color: transparent;
   color: #6bb7be;
 }
+/* end blog section */
 
 /* client section */
 .client_section {
@@ -579,7 +586,67 @@ a:focus {
 .client_section .carousel-control-next {
   left: initial;
 }
+/* end client section */
 
+/* events section */
+.events_section .heading_container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events_section .heading_container h2::before {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.events_section .box {
+  margin-top: 55px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.events_section .box .img-box {
+  position: relative;
+}
+
+.events_section .box .img-box img {
+  width: 100%;
+}
+
+.events_section .box .detail-box {
+  padding: 25px;
+}
+
+.events_section .box .detail-box h5 {
+  font-weight: bold;
+}
+
+.events_section .box .detail-box p {
+  font-size: 15px;
+  color: #444;
+}
+
+.events_section .box .detail-box a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #6bb7be;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #6bb7be;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.events_section .box .detail-box a:hover {
+  background-color: transparent;
+  color: #6bb7be;
+}
+/* end events section */
+
+/* contact section */
 .contact_section {
   position: relative;
   background-color: #f9fafa;
@@ -667,7 +734,9 @@ a:focus {
 .contact_section .map_container .map #googleMap {
   height: 100%;
 }
+/* contact section */
 
+/* info section */
 .info_section {
   background-color: #191e1f;
   color: #ffffff;
@@ -842,6 +911,8 @@ a:focus {
   color: #f89646;
   border-color: #f89646;
 }
+/* info section */
+
 
 /* footer section*/
 .footer_section {
