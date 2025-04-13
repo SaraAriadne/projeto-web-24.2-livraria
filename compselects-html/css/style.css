@@ -421,6 +421,24 @@ a:focus {
   background-color: transparent;
   color: #6bb7be;
 }
+
+.about_section .team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about_section .team-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+.about_section .team-member {
+
+}
 /* end about section */
 
 /* blog section */
