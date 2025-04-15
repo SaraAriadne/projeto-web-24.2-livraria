@@ -70,6 +70,14 @@ body {
           flex-direction: column;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 12px; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .sub_page .hero_area {
   min-height: auto;
 }
@@ -88,7 +96,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 3px 15px;
+  padding: 3px 0px;
   margin: 10px 15px;
   color: #272727;
   text-align: center;
@@ -104,6 +112,10 @@ a:focus {
 a:hover,
 a:focus {
   color: initial;
+}
+
+h1{
+  color: #19406c;
 }
 
 .btn,
@@ -191,6 +203,7 @@ a:focus {
 }
 
 .quote_btn-container {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +339,6 @@ a:focus {
 }
 /* end slider section */
 
-/* furniture_section */
 .furniture_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
@@ -383,6 +395,37 @@ a:focus {
   color: #6bb7be;
   text-transform: uppercase;
   font-size: 15px;
+} 
+
+.furniture_section .heading_container{
+  align-items: center;
+}
+
+.furniture_section .heading_container h2{
+  font-size: 2.5rem;
+  color: #19406c;
+}
+
+
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.slider-best-sellers .box-slider{
+  transform: scale(0.6);
+  transition: transform 0.5s ease;
+
+}
+
+.slider-best-sellers .box-slider.slick-center{
+  transform: scale(1);
 }
 /* end forniture section */
 
@@ -427,8 +470,8 @@ a:focus {
 /* blog section */
 .blog_section .heading_container {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .blog_section .heading_container h2::before {
