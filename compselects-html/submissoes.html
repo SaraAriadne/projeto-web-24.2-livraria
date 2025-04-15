@@ -13,7 +13,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Edgecut</title>
+  <title>Compselects</title>
 
 
   <!-- bootstrap core css -->
@@ -39,7 +39,7 @@
       <nav class="navbar navbar-expand-lg custom_nav-container ">
         <a class="navbar-brand" href="index.html">
           <span>
-            Edgecut
+            Compselects
           </span>
         </a>
         </a>
@@ -54,7 +54,7 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sobreNos.html">sobre Nós</a>
+                <a class="nav-link" href="sobreNos.html">Sobre Nós</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="publicacoes.html">Publicações</a>
@@ -101,69 +101,69 @@
   <section class="submissoes_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Submissões
-        </h2>
+        <h2>Submissões</h2>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Look even slightly believable. If you are
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+
+      <!-- Guia de Submissão -->
+      <div class="submission_guide mb-5">
+        <h3>Guia de Submissão:</h3>
+        <p>
+          Como parte do processo de submissão, os autores são obrigados a verificar a <strong>conformidade da submissão</strong> em relação a todos os itens listados a seguir. As submissões que não estiverem de acordo com as normas serão devolvidas aos autores.
+        </p>
+        <ol>
+          <li>A contribuição é <strong>original</strong> e <strong>inédita</strong>, e não está sendo avaliada para publicação por outra editora.</li>
+          <li>O arquivo principal da submissão está em formato Microsoft Office Word (.doc), <strong>SEM</strong> identificação.</li>
+          <li>
+            Prepare o manuscrito conforme as <strong>diretrizes de formatação</strong> disponíveis abaixo:
+            <ol type="a">
+              <li>Os textos podem ser redigidos em português, francês, inglês, espanhol, italiano ou alemão, ficando <strong>a cargo do(s) autor(es)</strong> a revisão textual em língua estrangeira.</li>
+              <li>Os textos devem seguir as normas da <strong>ABNT</strong> (última versão).</li>
+            </ol>
+          </li>
+          <li>Os textos submetidos passam por verificação de <strong>antiplagiarismo</strong>: caso seja detectada alguma porcentagem de plágio e/ou de autoplágio, o texto é de imediato recusado.</li>
+          <li><strong>Não</strong> serão aceitos manuscritos enviados por e-mail fora do site da editora.</li>
+        </ol>
+      </div>
+
+      <!-- Formulário de Submissão -->
+      <div class="submission_form mb-5">
+        <h3>Formulário de Submissão:</h3>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="titulo">Título do Manuscrito:</label>
+            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título proposto" required />
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Anything embarrassing hidden in the middle
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+          <div class="form-group">
+            <label for="autores">Autor(es):</label>
+            <input type="text" class="form-control" id="autores" name="autores" placeholder="Nome completo do(s) autor(es) (separados por vírgula)" required />
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b3.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Molestias magni natus dolores odio commodi. Quaerat!
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+          <div class="form-group">
+            <label for="resumo">Resumo:</label>
+            <textarea class="form-control" id="resumo" name="resumo" placeholder="Resumo em até 500 palavras do conteúdo da submissão"rows="5" required></textarea>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="arquivo">Upload do Arquivo</label>
+            <input type="file" class="form-control-file" id="arquivo" name="arquivo" accept=".pdf, .docx" required />
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submeter</button>
+        </form>
+      </div>
+
+      <!-- Política Editorial -->
+      <div class="editorial_policy">
+        <h3>Política Editorial:</h3>
+        <p>
+          Em conformidade com a <strong>Constituição Federal - artigo 5º. III e XLIII</strong>, com o <strong>Documento da Convenção da ONU sobre a Eliminação de todas as Formas de Discriminação Racial (1966)</strong> e com a <strong>Declaração Universal dos Direitos Humanos (1948)</strong>, a editora não aceita textos que façam apologia a qualquer tipo de discriminação, violência, tortura e quaisquer ideologias que firam os direitos básicos de todos os seres humanos.</li>
+        </p>
+        <p>
+          Os manuscritos submetidos são avaliados por pares em sistema <strong>blind review</strong>. Ao comitê editorial reserva-se o direito de recusar manuscritos que não estejam de acordo com a linha editorial ou que não cumpram as exigências de formatação e conteúdo.
+        </p>
+        <p>
+          O tempo médio de avaliação é de 4 a 8 semanas. Todos os autores serão notificados por e-mail sobre o resultado da avaliação.
+        </p>
       </div>
     </div>
   </section>
-
   <!-- end blog section -->
 
   <!-- info section -->
