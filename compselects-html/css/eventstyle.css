@@ -19,7 +19,7 @@
   }
   
   .event .event-left {
-    background: #f89646;
+    background: #FF8C00;
     min-width: 82px;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
   .event .event-right .event-timing {
     color: #eee;
     font-weight: 800;
-    background: #ff9b49;
+    background: #FF8C00;
     display: flex;
     align-items: center;
     justify-content: center;
