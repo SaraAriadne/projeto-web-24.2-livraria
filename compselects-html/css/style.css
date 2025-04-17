@@ -982,3 +982,63 @@ h1{
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* authors section */
+
+.autores_section {
+  background-color: #f9fafa;
+}
+
+.autores_section .row {
+  align-items: center;
+}
+
+.autores_section .box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza conteúdo horizontalmente */
+  justify-content: space-between;
+  text-align: center; /* Centraliza textos */
+  padding: 20px;
+}
+
+.autores_section .img-box {
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.autores_section .img-box img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto e botão */
+.autores_section .detail-box p {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.autores_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #6bb7be;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #6bb7be;
+  transition: all .2s;
+}
+
+.autores_section .detail-box a:hover {
+  background-color: transparent;
+  color: #6bb7be;
+}
+
+/* end authors section */
