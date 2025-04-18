@@ -4,43 +4,43 @@ document.addEventListener('DOMContentLoaded', function() {
         '2025-04-25': [
             {
                 time: '10:00',
-                title: 'Lançamento: "As Palavras e o Vento" – de Ana Ribeiro',
-                description: 'Evento de lançamento com sessão de autógrafos e bate-papo com a autora.'
+                title: 'Palestra: “Inteligência Artificial no Dia a Dia” – com Dr. Carlos Lima',
+                description: 'Uma conversa sobre como a IA está transformando diferentes setores da sociedade.'
             }
         ],
         '2025-05-15': [
             {
                 time: '10:45',
-                title: 'Webinar: O Futuro da Literatura Independente',
-                description: 'Debate com editores e escritores sobre os novos caminhos do mercado.'
+                title: 'Painel: O Futuro da Computação Quântica',
+                description: 'Especialistas discutem os desafios e possibilidades dessa nova fronteira da tecnologia.'
             }
         ],
         '2025-06-15': [
             {
                 time: '10:00',
-                title: 'Feira Literária da Cidade',
-                description: 'Estande da editora com promoções e atividades para o público.'
+                title: 'Workshop: Introdução à Programação com Python',
+                description: 'Oficina prática para quem quer dar os primeiros passos na programação com Python.'
             }
         ],
         '2025-07-15': [
             {
                 time: '10:00',
-                title: 'Palestra: Marketing para Escritores Iniciantes',
-                description: 'Com dicas práticas de divulgação e construção de público.'
+                title: 'Mesa Redonda: Segurança da Informação e Privacidade de Dados',
+                description: 'Um debate sobre como proteger seus dados na era digital, com convidados da área de cibersegurança.'
             }
         ],
-        '2025-08-15': [
+        '2025-08-20': [
             {
                 time: '10:00',
-                title: 'Webinar: Como Tirar seu Original da Gaveta',
-                description: 'Encontro virtual com editores explicando o processo de avaliação.'
+                title: 'Minicurso: Desenvolvimento de Jogos com Unity',
+                description: 'Aprenda a criar jogos 2D e 3D utilizando a engine Unity, com foco em lógica e design.'
             }
         ],
-        '2025-09-13': [
+        '2025-09-05': [
             {
                 time: '10:00',
-                title: 'Lançamento: Coletânea "Vozes do Interior"',
-                description: 'Evento cultural com leitura de trechos e apresentações artísticas.'
+                title: 'Talk: Mulheres na Computação – Desafios e Conquistas',
+                description: 'Um bate-papo inspirador sobre a presença feminina na área da computação.'
             }
         ]
     };
