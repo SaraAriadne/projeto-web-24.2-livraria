@@ -1012,7 +1012,9 @@ h1 {
 }
 
 .autores_section .row {
+  justify-content: space-between;
   align-items: center;
+  
 }
 
 .autores_section .box {
@@ -1024,6 +1026,7 @@ h1 {
   text-align: center; /* Centraliza textos */
   padding: 20px;
 }
+
 
 .autores_section .img-box {
   width: 100px;
@@ -1045,7 +1048,7 @@ h1 {
 /* Texto e botão */
 .autores_section .detail-box p {
   margin-top: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .autores_section .detail-box a {
