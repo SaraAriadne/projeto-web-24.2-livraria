@@ -340,14 +340,15 @@ h1 {
 }
 /* end slider section */
 
-.furniture_section .box {
+/* publications section */
+.publications_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
   padding: 25px;
   border-radius: 5px;
 }
 
-.furniture_section .box .img-box {
+.publications_section .box .img-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,21 +362,21 @@ h1 {
   padding: 25px;
 }
 
-.furniture_section .box .img-box img {
+.publications_section .box .img-box img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.furniture_section .box .detail-box {
+.publications_section .box .detail-box {
   margin-top: 15px;
 }
 
-.furniture_section .box .detail-box h5 {
+.publications_section .box .detail-box h5 {
   text-transform: uppercase;
   font-size: 18px;
 }
 
-.furniture_section .box .detail-box .price_box {
+.publications_section .box .detail-box .price_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,25 +385,25 @@ h1 {
   justify-content: space-between;
 }
 
-.furniture_section .box .detail-box .price_box .price_heading {
+.publications_section .box .detail-box .price_box .price_heading {
   margin-bottom: 0;
 }
 
-.furniture_section .box .detail-box .price_box .price_heading span {
+.publications_section .box .detail-box .price_box .price_heading span {
   color: #6bb7be;
 }
 
-.furniture_section .box .detail-box .price_box a {
+.publications_section .box .detail-box .price_box a {
   color: #6bb7be;
   text-transform: uppercase;
   font-size: 15px;
 }
 
-.furniture_section .heading_container {
+.publications_section .heading_container {
   align-items: center;
 }
 
-.furniture_section .heading_container h2 {
+.publications_section .heading_container h2 {
   font-size: 2.5rem;
   color: #19406c;
 }
@@ -425,7 +426,36 @@ h1 {
 .slider-best-sellers .box-slider.slick-center {
   transform: scale(1);
 }
-/* end forniture section */
+
+.filters {
+  background-color: #f7fafa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.filters h5 {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background-color: #6bb7be;
+  border-color: #6bb7be;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.filters button:hover {
+  color: #6bb7be;
+  border-color: #6bb7be;
+  background-color: transparent;
+}
+
+/* end publications section */
 
 /* about section */
 .about_section {
@@ -1064,3 +1094,30 @@ h1 {
 }
 
 /* end authors section */
+
+/* publicacoes section */
+
+.publicacoes_section {
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card-footer .btn {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+#filter-form input,
+#filter-form select {
+  font-size: 0.9rem;
+}
+
+/* end publicacoes section */
