@@ -32,6 +32,14 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
+
+    <!--Jquery para o uso de slick slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
 
   <body>
@@ -40,6 +48,7 @@
       <header class="header_section long_section px-0">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" class="logo-img" />
             <span> Compselects </span>
           </a>
           <button
@@ -119,9 +128,10 @@
                         nossos livros
                       </h1>
                       <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
+                        Descubra títulos inspiradores, aprenda algo novo ou
+                        mergulhe em histórias incríveis. Nossa coleção foi feita
+                        para todos os gostos — encontre o seu próximo livro
+                        favorito aqui!
                       </p>
                       <div class="btn-box">
                         <a href="" class="btn1"> Contact Us </a>
@@ -147,41 +157,14 @@
                         manuscrito
                       </h1>
                       <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
+                        Você é autor? Quer ver sua obra publicada? Envie seu
+                        manuscrito para avaliação e faça parte do nosso time de
+                        escritores. Estamos em busca de novas vozes e grandes
+                        histórias!
                       </p>
                       <div class="btn-box">
                         <a href="" class="btn1"> Contact Us </a>
-                        <a href="" class="btn2"> About Us </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-7">
-                    <div class="img-box">
-                      <img src="images/slider-img.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="detail-box">
-                      <h1>
-                        For All Your <br />
-                        Furniture Needs
-                      </h1>
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minus quidem maiores perspiciatis, illo maxime
-                        voluptatem a itaque suscipit.
-                      </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1"> Contact Us </a>
-                        <a href="" class="btn2"> About Us </a>
+                        <a href="" class="btn2"> Sobre nós </a>
                       </div>
                     </div>
                   </div>
@@ -201,7 +184,6 @@
               class="active"
             ></li>
             <li data-target="#customCarousel" data-slide-to="1"></li>
-            <li data-target="#customCarousel" data-slide-to="2"></li>
           </ol>
         </div>
       </section>
@@ -217,8 +199,8 @@
           <h2>Best sellers</h2>
           <p>Conheça os nossos livros mais vendidos.</p>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
+        <div class="row slider-best-sellers">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/livro1.jpg" alt="" />
@@ -232,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/livro2.jpg" alt="" />
@@ -246,7 +228,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/livro3.jpeg" alt="" />
@@ -260,7 +242,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/f4.png" alt="" />
@@ -274,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/f5.png" alt="" />
@@ -288,7 +270,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 box-slider">
             <div class="box">
               <div class="img-box">
                 <img src="images/f6.png" alt="" />
@@ -321,15 +303,16 @@
           <div class="col-md-6">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>About Us</h2>
+                <h2>Sobre Nós</h2>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti dolorem eum consequuntur ipsam repellat dolor soluta
-                aliquid laborum, eius odit consectetur vel quasi in quidem,
-                eveniet ab est corporis tempore.
+                Somos apaixonados por oferecer produtos de qualidade com estilo,
+                praticidade e inovação. Buscamos sempre trazer as melhores
+                tendências para você, com atendimento dedicado e entrega rápida.
+                Aqui, cada detalhe é pensado para proporcionar a melhor
+                experiência possível!
               </p>
-              <a href=""> Read More </a>
+              <a href="sobreNos.html"> Leia mais </a>
             </div>
           </div>
         </div>
@@ -737,6 +720,12 @@
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/script.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.js"></script>
     <!-- custom js -->

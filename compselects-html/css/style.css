@@ -70,6 +70,14 @@ body {
   flex-direction: column;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .sub_page .hero_area {
   min-height: auto;
 }
@@ -88,7 +96,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 3px 15px;
+  padding: 3px 0px;
   margin: 10px 15px;
   color: #272727;
   text-align: center;
@@ -104,6 +112,10 @@ a:focus {
 a:hover,
 a:focus {
   color: initial;
+}
+
+h1 {
+  color: #19406c;
 }
 
 .btn,
@@ -328,7 +340,6 @@ a:focus {
 }
 /* end slider section */
 
-/* furniture_section */
 .furniture_section .box {
   margin-top: 45px;
   background-color: #f7fafa;
@@ -386,6 +397,34 @@ a:focus {
   text-transform: uppercase;
   font-size: 15px;
 }
+
+.furniture_section .heading_container {
+  align-items: center;
+}
+
+.furniture_section .heading_container h2 {
+  font-size: 2.5rem;
+  color: #19406c;
+}
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-best-sellers .box-slider.slick-center .box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.slider-best-sellers .box-slider {
+  transform: scale(0.6);
+  transition: transform 0.5s ease;
+}
+
+.slider-best-sellers .box-slider.slick-center {
+  transform: scale(1);
+}
 /* end forniture section */
 
 /* about section */
@@ -429,6 +468,8 @@ a:focus {
 /* blog section */
 .blog_section .heading_container {
   -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -963,3 +1004,63 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* authors section */
+
+.autores_section {
+  background-color: #f9fafa;
+}
+
+.autores_section .row {
+  align-items: center;
+}
+
+.autores_section .box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza conteúdo horizontalmente */
+  justify-content: space-between;
+  text-align: center; /* Centraliza textos */
+  padding: 20px;
+}
+
+.autores_section .img-box {
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.autores_section .img-box img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto e botão */
+.autores_section .detail-box p {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.autores_section .detail-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #6bb7be;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #6bb7be;
+  transition: all 0.2s;
+}
+
+.autores_section .detail-box a:hover {
+  background-color: transparent;
+  color: #6bb7be;
+}
+
+/* end authors section */
