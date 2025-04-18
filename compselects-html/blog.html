@@ -29,6 +29,9 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
 </head>
 
 <body class="sub_page">
@@ -95,102 +98,144 @@
     <!-- end header section -->
   </div>
 
-
   <!-- blog section -->
-
-  <section class="blog_section layout_padding">
+  <section class="blog_section py-5 bg-light">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Blog
-        </h2>
+      <div class="heading_container text-center mb-5">
+        <h2 class="display-5 fw-bold">
+          Nosso Blog</h2>
+        <p class="text-muted">Confira nossas publicações mais recentes e destaque-se com conhecimento</p>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b1.jpg" alt="">
+
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="card border-0 shadow-lg">
+            <img src="images/b1.jpg" class="card-img-top" alt="Post em destaque">
+            <div class="card-body">
+              <h3 class="card-title">🚀 Grande Lançamento: Como a IA está transformando o futuro</h3>
+              <p class="card-text text-muted">Um olhar completo sobre as mudanças trazidas pela Inteligência Artificial.</p>
+              <div class="social-share mt-3">
+                <button class="btn btn-outline-primary" onclick="sharePost()">
+                  <i class="bi bi-share"></i> Compartilhar
+                </button>
+              <a href="postagem.html?id=1" class="btn btn-primary">Leia mais</a>
             </div>
-            <div class="detail-box">
-              <h5>
-                Look even slightly believable. If you are
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="images/b2.jpg" class="card-img-top" alt="Post médio 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">🔍 Descubra os 5 erros mais comuns em projetos de software</h5>
+              <p class="card-text text-muted">Evite armadilhas frequentes e aprimore sua entrega com boas práticas.</p>
+              <a href="postagem.html?id=2" class="btn btn-outline-primary mt-auto">Leia mais</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Anything embarrassing hidden in the middle
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img src="images/b3.jpg" class="card-img-top" alt="Post médio 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">💡 Como aprender programação mais rápido?</h5>
+              <p class="card-text text-muted">Dicas práticas para quem está começando ou deseja evoluir mais rápido.</p>
+              <a href="postagem.html?id=3" class="btn btn-outline-primary mt-auto">Leia mais</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b3.jpg" alt="">
+        
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 mb-2">
+          <div class="card flex-row shadow-sm h-100">
+            <img src="images/b4.jpg" class="card-img-left img-fluid" style="width: 200px; object-fit: cover;" alt="Post antigo 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">🧠 Machine Learning em projetos reais</h5>
+              <p class="card-text text-muted">Como aplicar aprendizado de máquina no dia a dia com foco em impacto e escalabilidade.</p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <div>
+                  <span class="me-3 text-secondary">
+                    <i class="bi bi-eye"></i> 120 visualizações
+                  </span>
+                  <button class="btn btn-sm btn-like" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i>
+                    <span class="like-count">103</span>
+                  </button>
+                  <button class="btn btn-outline btn-sm" onclick="sharePost()">
+                  <i class="bi bi-share"></i>
+                  </button>
+                </div>
+                <div>
+                  <a href="postagem.html?id=4" class="btn btn-outline-primary">Leia mais</a>
+                </div>
+              </div>
             </div>
-            <div class="detail-box">
-              <h5>
-                Molestias magni natus dolores odio commodi. Quaerat!
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
+          </div>
+        </div>
+
+        <div class="col-12 mb-2">
+          <div class="card flex-row shadow-sm h-100">
+            <img src="images/b5.jpg" class="card-img-left img-fluid" style="width: 200px; object-fit: cover;" alt="Post antigo 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">📊 Dados Abertos: oportunidades para desenvolvedores</h5>
+              <p class="card-text text-muted">Explorando APIs públicas e dados governamentais em projetos de software.</p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <div>
+                  <span class="me-3 text-secondary">
+                    <i class="bi bi-eye"></i> 189 visualizações
+                  </span>
+                  <button class="btn btn-sm btn-like" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> 
+                    <span class="like-count">105</span>
+                  </button>
+                  <button class="btn btn-outline btn-sm" onclick="sharePost()">
+                    <i class="bi bi-share"></i>
+                    </button>
+                </div>
+                <a href="postagem.html?id=5" class="btn btn-outline-primary">Leia mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-2">
+          <div class="card flex-row shadow-sm h-100">
+            <img src="images/b6.jpg" class="card-img-left img-fluid" style="width: 200px; object-fit: cover;" alt="Post antigo 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">🕹️ O crescimento dos jogos educacionais</h5>
+              <p class="card-text text-muted">Como a gamificação está mudando a forma como aprendemos em ambientes digitais.</p>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <div>
+                  <span class="me-3 text-secondary">
+                    <i class="bi bi-eye"></i> 142 visualizações
+                  </span>
+                  <button class="btn btn-sm btn-like" onclick="toggleLike(this)">
+                    <i class="bi bi-heart"></i> 
+                    <span class="like-count">97</span>
+                  </button>
+                  <button class="btn btn-outline btn-sm" onclick="sharePost()">
+                    <i class="bi bi-share"></i>
+                    </button>
+                </div>
+                <a href="postagem.html?id=6" class="btn btn-outline-primary">Leia mais</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- end blog section -->
 
   <!-- info section -->
   <section class="info_section long_section">
 
     <div class="container">
-      <div class="contact_nav">
-        <a href="">
-          <i class="fa fa-phone" aria-hidden="true"></i>
-          <span>
-            Call : +55 (83)99999-9999
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <span>
-            Email : compselects@gmail.com
-          </span>
-        </a>
-        <a href="">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span>
-            Localização
-          </span>
-        </a>
-      </div>
-
       <div class="info_top ">
         <div class="row ">
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -212,14 +257,22 @@
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
             <div class="info_post">
-              <h5>
-                INSTAGRAM
-              </h5>
-              <a href="">
+              <h5>COMO NOS ENCONTRAR</h5>
+              <a href="https://instagram.com/compselects" target="_blank" class="d-flex align-items-center text-decoration-none mb-2">
                 <span>@compselects</span>
+              </a>
+              <a href="mailto:compselects@gmail.com" class="d-flex align-items-center text-decoration-none mb-2">
+                <span>compselects@gmail.com</span>
+              </a>
+              <a href="tel:+5583999999999" class="d-flex align-items-center text-decoration-none mb-2">
+                <span>(83) 99999-9999</span>
+              </a>
+              <a href="https://maps.app.goo.gl/T1tQ2Rt7oAwacHEL8" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <span>UFCG - Campus Campina Grande</span>
               </a>
             </div>
           </div>
+          
           <div class="col-md-4">
             <div class="info_form">
               <h4>
