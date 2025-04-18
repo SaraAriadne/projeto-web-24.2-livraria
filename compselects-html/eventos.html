@@ -13,11 +13,13 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Edgecut</title>
+  <title>Compselects</title>
 
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/eventstyle.css">
+  <link rel="stylesheet" href="css/calendarstyle.css">
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
@@ -96,69 +98,185 @@
     <!-- end header section -->
   </div>
 
+  <!--Calendario-->
+  <section class="calendar_section layout_padding">
+    <div class="calendar-container">
+      <div class="calendar-side">
+          <div class="calendar-header">
+              <div class="calendar-title" id="month-year">Mês Ano</div>
+              <div class="calendar-nav">
+                  <button id="prev-month">&lt;</button>
+                  <button id="next-month">&gt;</button>
+              </div>
+          </div>
+          
+          <div class="calendar-weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sáb</div>
+          </div>
+          
+          <div class="calendar-days" id="calendar-days"></div>
+      </div>
+      
+      <div class="events-side">
+          <div class="events-header">
+              <div class="events-title" id="events-date">Eventos</div>
+              <div class="events-actions">
+                  <button class="today-btn" id="today-btn">Hoje</button>
+                  <button class="next-event-btn" id="next-event-btn">Próximo Evento</button>
+              </div>
+          </div>
+          
+          <div id="events-container">
+              <div class="no-events">Selecione uma data para ver os eventos</div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal para descrição detalhada -->
+  <div class="description-modal" id="descriptionModal">
+      <div class="modal-content">
+          <span class="close-modal" id="closeModal">&times;</span>
+          <div class="event-details" id="eventDetails">
+              <!-- Conteúdo será preenchido pelo JavaScript -->
+          </div>
+      </div>
+  </div>
+</section>
+
 
   <!-- Eventos -->
-
   <section class="events_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Eventos
-        </h2>
+    <div class="event-container">
+      <h3 class="year">Listagem eventos - 2025</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">25</div>
+            <div class="month">Abril</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Lançamento: “As Palavras e o Vento” – de Ana Ribeiro</h3>
+              
+          <div class="event-description">
+            Evento de lançamento com sessão de autógrafos e bate-papo com a autora.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Look even slightly believable. If you are
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">15</div>
+            <div class="month">Maio</div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Anything embarrassing hidden in the middle
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Webinar: O Futuro da Literatura Independente</h3>
+
+          <div class="event-description">
+            Debate com editores e escritores sobre os novos caminhos do mercado.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:45 am
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mx-auto">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b3.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Molestias magni natus dolores odio commodi. Quaerat!
-              </h5>
-              <p>
-                alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">15</div>
+            <div class="month">Junho</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Feira Literária da Cidade</h3>
+
+          <div class="event-description">
+            Estande da editora com promoções e atividades para o público.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">15</div>
+            <div class="month">Julho</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Palestra: Marketing para Escritores Iniciantes</h3>
+
+          <div class="event-description">
+            Com dicas práticas de divulgação e construção de público.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:30 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">20</div>
+            <div class="month">Agosto</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Webinar: Como Tirar seu Original da Gaveta</h3>
+
+          <div class="event-description">
+            Encontro virtual com editores explicando o processo de avaliação.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">5</div>
+            <div class="month">Setembro</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Lançamento: Coletânea “Vozes do Interior</h3>
+
+          <div class="event-description">
+            Evento cultural com leitura de trechos e apresentações artísticas.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
           </div>
         </div>
       </div>
@@ -263,6 +381,7 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+   <script src="js/calendar.js"></script>
 
 </body>
 
