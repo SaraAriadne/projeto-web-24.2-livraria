@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/e-book.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Compselects</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section long_section px-0">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo-img">
+          <span>
+            Compselects
+          </span>
+        </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobreNos.html">sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="publicacoes.html">Publicações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="submissoes.html">Submissões</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quote_btn-container">
+            <a href="">
+              <span>
+                Login
+              </span>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- publicações section -->
+
+  <section class="publications_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Publicações
+        </h2>
+        <p>
+          Conhecimento em cada página: confira nossas publicações
+        </p>
+      </div>
+
+      <div class="col-md-12">
+        <div class="filters">
+          <h5>Busca Avançada</h5>
+          <form>
+            <label for="filtroTitulo">Título</label>
+            <input type="text" id="filtroTitulo" name="titulo" placeholder="Digite o título">
+
+            <label for="filtroAutor">Autor</label>
+            <input type="text" id="filtroAutor" name="autor" placeholder="Digite o autor">
+            
+              <label for="filtroAno">Ano</label>
+              <input type="number" id="filtroAno" name="ano" min="1900" max="2099" placeholder="2024">
+
+              <label for="filtroCategoria">Categoria</label>
+              <select id="filtroCategoria" name="categoria">
+                <option value="">Todas</option>
+                <option value="livros">Livros</option>
+                <option value="periodicos">Periódicos</option>
+                <option value="artigos">Artigos</option>
+              </select>
+              <button type="submit" class="btn btn-primary w-100">Buscar</button>
+            </form>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                A história da computação
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 199.90
+                </h6>
+                <a href="produto.html?id=1">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Aprenda Programação
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 48.37
+                </h6>
+                <a href="produto.html?id=2">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                JavaScript: O Guia Definitivo
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 233.39
+                </h6>
+                <a href="produto.html?id=3">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro4.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Aprendendo Git
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 74.25
+                </h6>
+                <a href="produto.html?id=4">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro5.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Linux Eficiente
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 200.00
+                </h6>
+                <a href="produto.html?id=5">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro6.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                SQL - Guia Prático
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 200.00
+                </h6>
+                <a href="produto.html?id=6">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/livro7.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Arquitetura de software
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 200.00
+                </h6>
+                <a href="produto.html?id=7">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              
+              <img src="images/livro8.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Programação Utilizando IA
+              </h5>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  <span>$</span> 200.00
+                </h6>
+                <a href="produto.html?id=8">
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end publications section -->
+
+  <!-- info section -->
+  <section class="info_section long_section">
+
+    <div class="container">
+      <div class="info_top ">
+        <div class="row ">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                GUIA DE NAVEGAÇÃO
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="sobreNos.html">Sobre Nós</a>
+                <a class="" href="publicacoes.html">Publicações</a>
+                <a class="" href="autores.html">Autores</a>
+                <a class="" href="submissoes.html">Submissões</a>
+                <a class="" href="eventos.html">Eventos</a>
+                <a class="" href="blog.html">Blog</a>
+                <a class="" href="contato.html">Contato</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>COMO NOS ENCONTRAR</h5>
+              <a href="https://instagram.com/compselects" target="_blank" class="d-flex align-items-center text-decoration-none mb-2">
+                <span>@compselects</span>
+              </a>
+              <a href="mailto:compselects@gmail.com" class="d-flex align-items-center text-decoration-none mb-2">
+                <span>compselects@gmail.com</span>
+              </a>
+              <a href="tel:+5583999999999" class="d-flex align-items-center text-decoration-none mb-2">
+                <span>(83) 99999-9999</span>
+              </a>
+              <a href="https://maps.app.goo.gl/T1tQ2Rt7oAwacHEL8" target="_blank" class="d-flex align-items-center text-decoration-none">
+                <span>UFCG - Campus Campina Grande</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                INSCREVA-SE NA NOSSA NEWSLETTER
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Digite seu Email" />
+                <button type="submit">
+                  Inscrever
+                </button>
+              </form>
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
