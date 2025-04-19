@@ -100,48 +100,64 @@
   <!-- autores section -->
 
   <!-- Autores em Destaque -->
-  <section class="autores_section layout_padding">
+  <section class="autores_section layout_padding-top">
     <div class="container">
       <div class="heading_container">
         <h2>Autores em Destaque</h2>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-5 mb-4">
+      <div class="row mb-5">
+        
+        <!-- Card 1 -->
+        <div class="col-md-3 col-sm-6 mb-4">
           <div class="card text-center border-0 shadow rounded-4">
-            <img src="images/autor1.png" class="card-img-top rounded-top" alt="Carolina Maria de Jesus">
+            <img src="images/autor1.jpg" class="card-img-top rounded-top" alt="Maria Clara">
             <div class="card-body">
-              <h5 class="card-title">Carolina de Jesus</h5>
-              <p class="card-text">??????????</p>
-            </div>
-            <div class="detail-box">
-              <a href="publicacoes.html">Ver Publicações</a>
+              <h5 class="card-title">Carla Mendes</h5>
+              <p class="card-text">Especialista em Python e automação. Ensina programação para iniciantes 
+                                  e escreve sobre lógica, APIs e projetos open source.</p>
+              <a href=""> Saiba Mais </a>
             </div>
           </div>
         </div>
+  
+        <!-- Card 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card text-center border-0 shadow rounded-4">
-            <img src="images/autor2.png" class="card-img-top rounded-top" alt="Jorge Amado">
+            <img src="images/autor2.jpg" class="card-img-top rounded-top" alt="João Vitor">
             <div class="card-body">
-              <h5 class="card-title">Jorge Amado</h5>
-              <p class="card-text">??????????</p>
-            </div>
-            <div class="detail-box">
-              <a href="publicacoes.html">Ver Publicações</a>
+              <h5 class="card-title">Lucas Tavares</h5>
+              <p class="card-text">Desenvolvedor apaixonado por JavaScript. Autor de livros sobre 
+                                  React, Node.js e web moderno com foco em performance.</p>
+              <a href=""> Saiba Mais </a>
             </div>
           </div>
         </div>
+  
+        <!-- Card 3 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card text-center border-0 shadow rounded-4">
-            <img src="images/autor3.png" class="card-img-top rounded-top" alt="Helder Pinheiro">
+            <img src="images/autor3.jpg" class="card-img-top rounded-top" alt="Letícia Barbosa">
             <div class="card-body">
-              <h5 class="card-title">Helder Pinheiro</h5>
-              <p class="card-text">??????????</p>
-            </div>
-            <div class="detail-box">
-              <a href="publicacoes.html">Ver Publicações</a>
+              <h5 class="card-title">Helena Borges</h5>
+              <p class="card-text">Professora universitária, pesquisa IA. 
+                                  Escreve livros didáticos com foco em redes neurais e visão computacional.</p>
+              <a href=""> Saiba Mais </a>
             </div>
           </div>
-        </div>        
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card text-center border-0 shadow rounded-4">
+            <img src="images/autor4.jpg" class="card-img-top rounded-top" alt="Carlos Henrique">
+            <div class="card-body">
+              <h5 class="card-title">Rafael Lima</h5>
+              <p class="card-text">Arquiteto de software com duas décadas de experiência. Seus livros abordam padrões 
+                                  de projeto, boas práticas e arquitetura limpa em Java.</p>
+              <a href=""> Saiba Mais </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -162,28 +178,116 @@
   </section>
 
   <!-- Depoimentos -->
-  <section class="depoimentos_section layout_padding">
+  <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
         <h2>Depoimentos</h2>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial_box">
-            <p>"Publicar com essa editora foi uma experiência transformadora. O cuidado com minha obra foi excepcional!"</p>
-            <h6>- Ana Souza</h6>
+      <div
+        id="carouselExample2Controls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/autor1.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Carla Mendes</h6>
+                    </div>
+                    <p>
+                      "Publicar com a Compselects foi uma experiência
+                      transformadora. O cuidado editorial e o alcance da obra
+                      foram surpreendentes. Em poucos meses, meu livro se
+                      tornou referência em disciplinas de graduação e pós."
+                    </p>
+                    <p class="text-date" style="font-size: 0.9em">
+                      Publicado em: 11 de Abril de 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/autor2.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Lucas Tavares</h6>
+                    </div>
+                    <p>
+                      "Encontrei na Compselects uma editora que entende o
+                      valor do conteúdo técnico de qualidade. Como leitora e
+                      autora, me sinto acolhida por uma equipe que respeita a
+                      ciência e a comunidade acadêmica."
+                    </p>
+                    <p class="text-date" style="font-size: 0.9em">
+                      Publicado em: 01 de Abril de 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/autor3.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Helena Borges</h6>
+                    </div>
+                    <p>
+                      "A plataforma digital da editora facilitou muito o
+                      acesso aos livros para os meus alunos. É incrível ver
+                      títulos técnicos com linguagem acessível e atualizados
+                      com as tendências da Computação."
+                    </p>
+                    <p class="text-date" style="font-size: 0.9em">
+                      Publicado em: 19 de Março de 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="testimonial_box">
-            <p>"Graças ao apoio editorial, consegui lançar meu primeiro livro com qualidade profissional. Recomendo a todos."</p>
-            <h6>- Roberto Menezes</h6>
-          </div>
+        <div class="carousel_btn-container">
+          <a
+            class="carousel-control-prev"
+            href="#carouselExample2Controls"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExample2Controls"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
-
   
   <!-- end blog section -->
 
